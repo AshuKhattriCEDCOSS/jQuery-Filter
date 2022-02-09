@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <title>Filter and Selectors</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="main">
+      <select id="brand">
+        <option value="" disabled selected hidden>Filter By Brand</option>
+        <option value="default">Show All</option>
+        <option value="Apple">Apple</option>
+        <option value="Motorola">Motorola</option>
+        <option value="Apple">Apple</option>
+        <option value="ASUS">ASUS</option>
+        <option value="Microsoft">Microsoft</option>
+      </select>
+      <select id="os">
+        <option value="" disabled selected hidden>Filter By OS</option>
+        <option value="default">Show All</option>
+        <option value="iOS">iOS</option>
+        <option value="Android">Android</option>
+        <option value="Windows">Windows</option>
+      </select>
+      <br /><br /><br />
+      <table border="20px" cellpadding="15px">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Brand</th>
+            <th>Operating System</th>
+            <th>Remove</th>
+          </tr>
+        </thead>
+        <tbody id="data"></tbody>
+      </table>
+      <br /><br />
+      <label>Search&nbsp;</label>
+      <input type="text" id="searchrecord" />
+      <input type="button" id="buttonpress" value="Submit" onclick="search()" />
+    </div>
+  </body>
+</html>

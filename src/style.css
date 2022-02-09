@@ -1,0 +1,31 @@
+body {
+  padding: 20px;
+}
+
+select {
+  margin: 20px;
+  margin-left: 100px;
+}
+#main {
+  margin-left: 300px;
+}
+input[type="text"] {
+  width: 30%;
+  height: 5%;
+}
+#buttonpress {
+  width: 10%;
+  height: 5%;
+}
+input[type="button"]:hover {
+  color: crimson;
+  background-color: white;
+}
+
+label {
+  font-size: 20px;
+}
+
+select {
+  font-size: 18px;
+}
