@@ -46,6 +46,9 @@ $(document).ready(function () {
     check_by_brand(temp, values);
   });
 
+  $("#searchrecord").keyup(function () {
+    search();
+  });
   $("#brand").on("change", function () {
     if (
       $("#os").on("change", function () {
@@ -83,7 +86,7 @@ function search() {
   f = 0;
   var values = $("#searchrecord").val();
   for (var i = 0; i < a.length; i++) {
-    if (values == a[i].id || values == a[i].name) {
+    if (values == a[i].id || values.toUpperCase() == a[i].name.toUpperCase()) {
       temp +=
         "<tr id='row_" +
         a[i].id +
@@ -102,7 +105,7 @@ function search() {
     }
   }
   if (f == 0) {
-    alert("No Record Found!!");
+    //alert("No Record Found!!");
   }
   $("#data").html(temp);
 }

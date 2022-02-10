@@ -29,3 +29,9 @@ label {
 select {
   font-size: 18px;
 }
+#brand {
+  margin-left: 30px;
+}
+#showall {
+  margin-left: 50px;
+}
